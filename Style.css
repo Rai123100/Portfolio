@@ -3,8 +3,15 @@
     margin: 0;
 }
 
-/* ------------------------------------------------------------------------------- */
 
+
+
+/* Cabeçalho -------------------------------------------------------------------------------------------------------------------------------------------------------------- Cabeçalho */
+
+
+
+
+/* Corpo do header */
 header {
 /* ------------------------------------------*/
     height: 8.5vh;
@@ -18,12 +25,14 @@ header {
 
 }
 
+/* Logo que fica no header */
 .Logo {
 /* ------------------------------------------*/
     height: 8.5vh;
 /* ------------------------------------------*/
 }
 
+/* Opções do header - "Sobre mim", "Projetos", "Certificações" */
 .Menu {
 /* ------------------------------------------*/
     width: 57.2vw;
@@ -35,30 +44,13 @@ header {
 /* ------------------------------------------*/
 }
 
-.titulo {
-    width: 19vw;
-    height: 5vh;
-/* ------------------------------------------*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-/* ------------------------------------------*/
-    color: white;
-    font-family: "Inter", serif;
-    font-optical-sizing: auto;
-    font-weight: 350;
-    font-style: normal;
-    font-size: 4vh;
-/* ------------------------------------------*/
-    border-left: 0.4vh solid white ;
-    cursor: pointer;
-}
 
+/* Configurando os textos do header */
 .titulo {
 /* ------------------------------------------*/
     width: 19vw;
 /* ------------------------------------------*/
-    min-height: 6vh; /* aumentei um pouco para acomodar o span */
+    min-height: 6vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -76,30 +68,32 @@ header {
     position: relative;
 /* ------------------------------------------*/
 }
-    
+
+/* Configurando a linha debaixo para o detalhe no header */
 .linha {
 /* ------------------------------------------*/
     display: block;
-    width: 30%; /* controle da largura da linha */
+    width: 30%;
     height: 0.3vh;
     margin-top: 0.3vh;
     background-color: transparent;
     transition: background-color 0.3s ease;
 /* ------------------------------------------*/
 }
-    
+
+/* Para que fique o detalhe debaixo da opção */
 .titulo:hover .linha {
 /* ------------------------------------------*/
     background-color: white;
 /* ------------------------------------------*/
 }
 
-
+/* Para não aparecer do lado do "Sobre mim" */
 #none {
     border-left: none;
 } 
 
-
+/* Botão de contato */
 .botao_titulo {
     height: 5vh;
 /* ------------------------------------------*/
@@ -123,7 +117,7 @@ header {
     cursor: pointer;
 }
 
-
+/* Botão de contato - Branquinho*/
 .botao_titulo:hover {
 /* ------------------------------------------*/
     background-color: rgba(255, 255, 255, 0.877);
@@ -132,17 +126,24 @@ header {
     transition: all 0.3s ease;
 }
 
-/* ------------------------------------------------------------------------------- */
 
+
+/* SOBRE MIM -------------------------------------------------------------------------------------------------------------------------------------------------------------- SOBRE MIM */
+
+
+
+
+/* Imagem do astronauta dando tchau */
 .astronauta_1 img{
 /* ------------------------------------------*/
-    width: 12vw;
+    width: 8vw;
 /* ------------------------------------------*/
-    margin-left: 6vw;
-    margin-top: 1vh;
+    margin-left: 10vw;
+    margin-top: 7vh;
     float: left;
 }
 
+/* HEllo World - imagem */
 .hello_world img{
 /* ------------------------------------------*/
     width: 30vw;
@@ -150,16 +151,20 @@ header {
     margin-top: 7vh;
 }
 
+/* HEllo World - div */
 .hello_world {
+/* ------------------------------------------*/
     z-index: 1;
 }
 
+/* Meu Nome - ajustando a div*/
 .nome {
 /* ------------------------------------------*/
     clear: both;
     z-index: 0;
 }
 
+/* Meu Nome - imagem*/
 .nome img {
 /* ------------------------------------------*/
     width: 50vw;
@@ -167,3 +172,64 @@ header {
     margin-left: 8vw;
     margin-top: 0.5vh;
 }
+
+/* Título "Desenvolvedor de Sistema Web" */
+.desenvolvedor{
+/* ------------------------------------------*/
+    margin-left: 19vw;
+    margin-top: 1vh;
+/* ------------------------------------------*/
+    color: #999999;
+    font-family: "Kavoon", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.5vh;
+}
+
+/* Textão falando sobre mim */
+.texto_sobre_mim{
+/* ------------------------------------------*/
+    width: 45vw;
+/* ------------------------------------------*/
+    margin-top: 2vh;
+    margin-left: 10vw;
+/* ------------------------------------------*/
+    color: white;
+    font-size: 2.5vh;
+    font-family: "K2D", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    text-align: center;
+}
+
+/* Botão(Curriculo)*/
+.botao_curriculo {
+/* ------------------------------------------*/
+    width: 9vw;
+    height: 7vh;
+/* ------------------------------------------*/
+    margin-top: 3vh;
+    margin-left: 27vw;
+/* ------------------------------------------*/
+    background-image: url("/img/Botão_Curriculo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Botão(Curriculo) - Versão Branca */
+.botao_curriculo:hover{
+/* ------------------------------------------*/
+    width: 9vw;
+    height: 7vh;
+/* ------------------------------------------*/
+    background-image: url('/img/Botão_Curriculo_Branco.png');
+    cursor: pointer;
+}
+
+
+
+/* SOBRE MIM -------------------------------------------------------------------------------------------------------------------------------------------------------------- SOBRE MIM */
+
+
+
